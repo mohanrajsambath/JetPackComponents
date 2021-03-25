@@ -2,9 +2,11 @@ package com.mohan.viewmodellivedata;
 
 import android.util.Log;
 
+import androidx.lifecycle.ViewModel;
+
 import java.util.Random;
 
-public class MainActivityDataGenerator {
+public class MainActivityViewModel extends ViewModel {
     private String TAG =this.getClass().getSimpleName();
     private String RandomNumber;
 
@@ -22,5 +24,9 @@ public class MainActivityDataGenerator {
         RandomNumber = "Number:" + (mRandom.nextInt(100-1)+1);
     }
 
-
+    @Override
+    protected void onCleared() {
+        super.onCleared();
+        Log.i(TAG,"Cleared View Model");
+    }
 }
