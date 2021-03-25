@@ -1,0 +1,3 @@
+include ':viewmodellivedata'
+include ':app'
+rootProject.name = "JetPackComponents"
