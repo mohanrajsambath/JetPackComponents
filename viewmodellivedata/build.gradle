@@ -44,9 +44,10 @@ dependencies {
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
 
 
+    implementation "android.arch.paging:runtime:$paging_version"
     implementation "androidx.paging:paging-runtime:$paging_version" // For Kotlin use paging-runtime-ktx
     // alternatively - without Android dependencies for testing
-    testImplementation "androidx.paging:paging-common:$paging_version" // For Kotlin use paging-common-ktx
+    //testImplementation "androidx.paging:paging-common:$paging_version" // For Kotlin use paging-common-ktx
 
     implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
     implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
